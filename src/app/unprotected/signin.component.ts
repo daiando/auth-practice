@@ -15,6 +15,7 @@ import { AuthService } from "../shared/auth.service";
                 <label for="password">Password</label>
                 <input formControlName="password" type="password" id="password" class="form-control">
             </div>
+            <br>
             <button type="submit" [disabled]="!myForm.valid" class="btn btn-primary">Sign In</button>
         </form>
     `

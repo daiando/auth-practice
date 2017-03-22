@@ -21,6 +21,7 @@ import { AuthService } from "../shared/auth.service";
                 <input formControlName="confirmPassword" type="password" id="confirm-password" #confirmPassword class="form-control">
                 <span *ngIf="!confirmPassword.pristine && confirmPassword.errors != null && confirmPassword.errors['passwordsNotMatch']">Passwords do not match</span>
             </div>
+            <br>
             <button type="submit" [disabled]="!myForm.valid" class="btn btn-primary">Sign Up</button>
         </form>
     `
